@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Main - Warehouse{% endblock %}
+
+{% block content %}
+    <div class="panel">
+        <div class="panel-header">
+            <div class="panel-title h5">Current warehouse indicators</div>
+        </div>
+        <div class="panel-body">
+            <p class="text-large">Stock Level: <strong>{{ stock_level }}</strong> items</p>
+            <p class="text-large">Account Balance: <strong>{{ balance }}</strong> PLN</p>
+
+            <h6 class="mt-4">Current Warehouse Inventory:</h6>
+            {% if warehouse_items %}
+                <ul class="list-unstyled">
+                {% for product_name, details in warehouse_items.items() %}
+                    <li><strong>{{ product_name | capitalize }}:</strong> {{ details.quantity }} items at {{ details.price }} PLN/item</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>Warehouse is currently empty.</p>
+            {% endif %}
+        </div>
+        <div class="panel-footer">
+            <div class="btn-group btn-group-block">
+                <a href="{{ url_for('purchase') }}" class="btn btn-primary">Purchase</a>
+                <a href="{{ url_for('sale') }}" class="btn btn-primary">Sale</a>
+                <a href="{{ url_for('balance_change') }}" class="btn btn-primary">Balance change</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
