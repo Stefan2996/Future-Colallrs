@@ -1,0 +1,18 @@
+{
+    "bike": {
+        "price": 540,
+        "quantity": 0
+    },
+    "computer": {
+        "price": 4800,
+        "quantity": 3
+    },
+    "smartphone": {
+        "price": 2700,
+        "quantity": 8
+    },
+    "microwave": {
+        "price": 1100,
+        "quantity": 3
+    }
+}
