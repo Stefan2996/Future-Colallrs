@@ -324,13 +324,3 @@ if __name__ == '__main__':
             print("Initial balance record created.")
 
     app.run(debug=True)
-
-
-    # def create_tables():
-    #     # Create tables in the database before the first request to the application
-    #     db.create_all()
-    #     # Let's make sure there is a balance record if the DB is empty
-    #     if not CompanyBalance.query.first():
-    #         db.session.add(CompanyBalance(amount=1000000.0))
-    #         db.session.commit()
-    #     print("Database tables created or already exist.")
