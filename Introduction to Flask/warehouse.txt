@@ -1,1 +1,0 @@
-{'laptop': {'price': 4000, 'quantity': 4}, 'phone': {'price': 2500, 'quantity': 48}, 'book': {'price': 20, 'quantity': 43}, 'pen': {'price': 6, 'quantity': 108}, 'shirt': {'price': 15, 'quantity': 20}, 'socks': {'price': 10, 'quantity': 20}, 'flag': {'price': 30, 'quantity': 11}, 'mp3 player': {'price': 250, 'quantity': 2}}

@@ -1,7 +1,0 @@
-Purchase: 2 units (laptop) for 8000 PLN. Balance: 968400 PLN. In stock: 4 units.
-Purchase: 10 units (shirt) for 220 PLN. Balance: 968180 PLN. In stock: 20 units.
-Purchase: 11 units (pen) for 77 PLN. Balance: 968103 PLN. In stock: 127 units.
-Sale: 44 units (flag) for 1320 PLN. Balance: 969423 PLN. In stock: 11 units.
-Sale: 19 units (pen) for 114 PLN. Balance: 969537 PLN. In stock: 108 units.
-Purchase: 44 units (phone) for 167156 PLN. Balance: 802381 PLN. In stock: 48 units.
-Adding funds (100000) to the account. Balance: 902381 PLN
