@@ -1,0 +1,143 @@
+/* GENERAL STYLES */
+body {
+    margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: #334;
+    background-color: #f7f8f9; /* Light gray background */
+}
+
+/* Inherit box-sizing for easier spacing and sizing */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum page height to fill the viewport */
+    /* Removed overflow: hidden; from .page so sticky works correctly */
+}
+
+/* HEADER */
+header.navbar {
+    position: sticky; /* Makes the header sticky */
+    top: 0;           /* Sticks to the top of the screen */
+    width: 100%;      /* Stretches to full width */
+    padding: 1rem 1.5rem; /* Padding inside the header */
+    background: #ffffff; /* White background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+    z-index: 1000;    /* Ensures the header is above other content */
+    border-bottom: 1px solid #eee; /* Small bottom border */
+    display: flex; /* Spectre.css navbar is already flex, but explicitly declared */
+    justify-content: space-between; /* Distributes items */
+    align-items: center; /* Vertically centers items */
+}
+
+/* Style for links in the header */
+header .btn-link {
+    font-size: 1rem;
+    padding: .5rem .75rem;
+    color: #57606a; /* Darker than default */
+    text-decoration: none;
+}
+
+header .btn-link:hover {
+    color: #007bff; /* Hover color */
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+main.container {
+    flex: 1; /* Allows the main content to take up all available space, pushing the footer down */
+    padding-top: 2rem; /* Top padding to prevent content from being pushed into the header */
+    padding-bottom: 2rem; /* Bottom padding to prevent content from being pushed to the footer */
+    max-width: 960px; /* Limiting content width for readability */
+    margin: 0 auto; /* Center the container */
+}
+
+/* FOOTER */
+footer.footer {
+    padding: 1.5rem 1rem; /* Indents inside the footer */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #667; /* Darker text */
+    font-size: 0.85rem; /* Smaller font size */
+    border-top: 1px solid #e0e0e0; /* Small border on top */
+}
+
+/* Additional styles for Spectre.css forms and buttons to make them look neater */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.btn {
+    margin-right: .5rem; /* Spacing between buttons */
+}
+
+/* Styles for Toast messages (get_flashed_messages) */
+.toast {
+    position: relative;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: .2rem;
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+.toast-success {
+    background: #e6ffed;
+    color: #219d3f;
+    border: 1px solid #219d3f;
+}
+
+.toast-error, .toast-danger { /* Use toast-error or toast-danger for errors */
+    background: #ffebe9;
+    color: #e54545;
+    border: 1px solid #e54545;
+}
+
+.toast-warning {
+    background: #fff8e6;
+    color: #f7931b;
+    border: 1px solid #f7931b;
+}
+
+.toast .btn-clear { /* Close message button */
+    margin-top: -.25rem;
+    margin-right: -.5rem;
+}
+
+/* Styles for page headings */
+.content h1, .content h2, .content h3 {
+    margin-bottom: 1.5rem;
+    color: #334;
+}
+
+/* Styles for panels (can be used to display balance/stock) */
+.panel {
+    background: #fff;
+    border: 1px solid #e6e9ed;
+    border-radius: .2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,.06);
+}
+
+.panel-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e6e9ed;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 1.5rem;
+}
+
+.panel-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e6e9ed;
+    text-align: right;
+}
