@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Purchase{% endblock %}
+
+{% block content %}
+    <div class="panel">
+        <div class="panel-header">
+            <div class="panel-title h5">Current warehouse indicators</div>
+        </div>
+        <div class="panel-body">
+            <p class="text-large">Stock Level: **[Your dynamic stock level will go here]**</p>
+            <p class="text-large">Account Balance: **[Your dynamic account balance will go here]**</p>
+        </div>
+        <div class="panel-footer">
+            <div class="btn-group btn-group-block">
+                <a href="{{ url_for('purchase') }}" class="btn btn-primary">Purchase</a>
+                <a href="{{ url_for('sale') }}" class="btn btn-primary">Sale</a>
+                <a href="{{ url_for('balance_change') }}" class="btn btn-primary">Balance change</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
